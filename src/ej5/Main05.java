@@ -12,8 +12,8 @@ public class Main05 {
 
 		int notas[] = new int[numero_alumnos];
 		int suma = 0, 
-				nota_maxima = 0, 
-				nota_minima = Integer.MIN_VALUE;
+				nota_maxima = Integer.MIN_VALUE, 
+				nota_minima = Integer.MAX_VALUE;
 
 		for(int i = 0; i < numero_alumnos; i++) {
 			System.out.print("Nota de alumno " + (i + 1) + ": ");
@@ -21,7 +21,7 @@ public class Main05 {
 			notas[i] = nota;
 			suma += nota;
 			if(nota > nota_maxima) nota_maxima = nota;
-			if(nota < nota_minima || nota_minima == Integer.MIN_VALUE) nota_minima = nota;
+			if(nota < nota_minima) nota_minima = nota;
 		}
 
 		System.out.println("Nota media: " + (suma / numero_alumnos));
