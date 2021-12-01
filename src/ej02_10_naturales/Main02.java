@@ -1,4 +1,4 @@
-package ej2;
+package ej02_10_naturales;
 
 public class Main02 {
 
@@ -10,7 +10,7 @@ public class Main02 {
 		}
 		
 		// Print
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < numeros.length; i++) {
 			System.out.println(numeros[i]);
 		}
 	}

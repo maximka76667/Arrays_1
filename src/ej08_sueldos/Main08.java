@@ -1,8 +1,8 @@
-package ej8;
+package ej08_sueldos;
 
 import java.util.Scanner;
 
-public class Sueldos {
+public class Main08 {
 
 	public static void main(String[] args) {
 		

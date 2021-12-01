@@ -1,4 +1,4 @@
-package ej6;
+package ej06_contador;
 
 import java.util.Scanner;
 
@@ -11,11 +11,11 @@ public class Main06 {
 		int numeros[] = new int[cantidad];
 		
 		for(int i = 0; i < cantidad; i++) {
-			System.out.print("Número: ");
+			System.out.print("Número " + (i + 1) +": ");
 			numeros[i] = entrada.nextInt();
 		}
 		
-		System.out.println("Que número buscas?");
+		System.out.print("Que número buscas? ");
 		int numero_busc = entrada.nextInt();
 		
 		int contador = 0;

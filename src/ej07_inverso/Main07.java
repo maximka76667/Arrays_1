@@ -1,4 +1,4 @@
-package ej7;
+package ej07_inverso;
 
 import java.util.Scanner;
 
@@ -11,14 +11,14 @@ public class Main07 {
 		Scanner entrada = new Scanner(System.in);
 		
 		for(int i = 0; i < cantidad; i++) {
-			System.out.print("Valor " + i + ": ");
+			System.out.print("Valor " + (i + 1) + ": ");
 			valores[i] = entrada.nextInt();
 		}
 		
 		entrada.close();
 		
 		// Print
-		for(int i = valores.length - 1; i >= 0; i--) System.out.println("Valor de array " + i + ": " + valores[i]);
+		for(int i = valores.length - 1; i >= 0; i--) System.out.println("Valor de array " + (i + 1) + ": " + valores[i]);
 	}
 
 }

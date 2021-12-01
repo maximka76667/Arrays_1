@@ -1,4 +1,4 @@
-package ej5;
+package ej05_notas;
 
 import java.util.Scanner;
 
@@ -10,14 +10,14 @@ public class Main05 {
 		System.out.print("Numero de alumnos: ");
 		int numero_alumnos = entrada.nextInt();
 
-		int notas[] = new int[numero_alumnos];
-		int suma = 0, 
+		double notas[] = new double[numero_alumnos];
+		double suma = 0, 
 				nota_maxima = Integer.MIN_VALUE, 
 				nota_minima = Integer.MAX_VALUE;
 
 		for(int i = 0; i < numero_alumnos; i++) {
 			System.out.print("Nota de alumno " + (i + 1) + ": ");
-			int nota = entrada.nextInt();
+			double nota = entrada.nextDouble();
 			notas[i] = nota;
 			suma += nota;
 			if(nota > nota_maxima) nota_maxima = nota;

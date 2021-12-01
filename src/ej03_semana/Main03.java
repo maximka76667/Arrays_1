@@ -1,4 +1,4 @@
-package ej3;
+package ej03_semana;
 
 public class Main03 {
 
